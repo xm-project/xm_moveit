@@ -1,0 +1,20 @@
+controller_list:
+  - name: xm/right_arm_controller
+    action_ns: follow_joint_trajectory
+    type: FollowJointTrajectory
+    default: true
+    joints:
+      - joint_lift
+      - joint_waist
+      - joint_big_arm
+      - joint_forearm
+      - joint_wrist_pitching
+      - joint_wrist_rotation
+      
+  - name: xm/right_gripper_controller
+    action_ns: gripper_action
+    type: GripperCommand
+    default: true
+    joints:
+      - joint_finger_right
+      
